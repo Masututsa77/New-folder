@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Legendary Musician</title>
+    <style>
+        .center-text {
+            text-align: center;
+            margin-top: 50px; 
+        }
+    </style>
+       <style>
+            .dropdown {
+                position: relative;
+                display: inline-block;
+            }
+    
+            .dropdown-content {
+                display: none;
+                position: absolute;
+                background-color: #f9f9f9;
+                min-width: 200px;
+                box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+                z-index: 1;
+            }
+    
+            .dropdown-content label {
+                display: block;
+                padding: 8px;
+                cursor: pointer;
+            }
+    
+            .dropdown-content label:hover {
+                background-color: #f1f1f1;
+            }
+    
+            .dropdown:hover .dropdown-content {
+                display: block;
+            }
+        </style>
+
+<style>
+    .audio-container {
+        text-align: center;
+    }
+
+    .audio-container {
+        width: 300px;
+        height: auto;
+        margin-bottom: 1px;
+    }
+
+    audio {
+        width: 300px;
+    }
+</style>
+</head>
+<body>
+    <div class="center-text">
+        <h1>Become A Legendary Musician</h1>
+        <p><h3>your tomorrow starts today</h3></p>
+    </div>
+
+    <p>fill in the form and you can get started in no time</p>
+    <ol type="i"><li>Piano</li><li>Drums</li><li>Violin</li><li>Guitar</li><li>Trumpet</li></ol>
+
+    <img src="pexels.jpg" alt="pexels.jpg" width="400" height="300">
+    <p>For more information on how to become a great musician with us please contact on of the following crew members</p>
+    <table border="1">
+        <tr>
+            <th>Name</th>
+            <th>Address</th>
+            <th>Mobile</th>
+            <th>E-Mail</th>
+        </tr>
+        <tr>
+            <td>Micheal Flows </td>
+            <td>32 Jackson Str </td>
+            <td>+1 881 156 5615 </td>
+            <td>mikeflows@gmail.com </td>
+        </tr>
+        <tr>
+            <td>Junior King </td>
+            <td>3 Hill Road </td>
+            <td>+1 888 555 1425 </td>
+            <td>jking@gmail.com </td>
+        </tr>
+        <tr>
+            <td>Tommy Edwards </td>
+            <td>354 Temple Str </td>
+            <td>+1 881 564 0754 </td>
+            <td>tom.eds@gmail.com </td>
+        </tr>
+        <tr>
+            <td>Cloe Smiles </td>
+            <td>89 Peter Pan Str </td>
+            <td>+1 888 326 1596 </td>
+            <td>smiles@gmail.com </td>
+        </tr>
+        <tr>
+            <td>Bruce Trimmer </td>
+            <td>1 Clipper Ave </td>
+            <td>+1 888 471 0886 </td>
+            <td>trimbru@gmail.com </td>
+        </tr>
+    </table>
+    <h2>Registration Form</h2>
+    <form action="submit_registration.php" method="post">
+        
+        <label for="fullname">Full Name:</label>
+        <input type="text" id="fullname" name="fullname" required>
+        <br><br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <br><br>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+        <br><br>
+        <label>Gender:</label>
+        <input type="radio" id="male" name="gender" value="Male" required>
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="Female">
+        <label for="female">Female</label>
+        <br><br>
+        <p>Which instrument can you play</p>
+        <div class="dropdown">
+            <button>Choose Options</button>
+            <div class="dropdown-content">
+                <label>
+                    <input type="checkbox" value="Option 1"> Piano
+                </label>
+                <label>
+                    <input type="checkbox" value="Option 2"> Drums
+                </label>
+                <label>
+                    <input type="checkbox" value="Option 3"> Guitar
+                </label>
+            </div>
+        </div>
+        <br></br>
+        <button type="submit">Register</button>
+    </form>
+    <br></br>
+        <div class="audio-container">
+           <source src="coding.jpeg" alt="coding">
+        <audio controls>
+            <source src="apt.mp3" type="audio/mp3">
+    </audio>
+    </div>
+    <br></br>
+    <video controls width="640" height="360">
+        <source src="joko.mp4" type="video/mp4">
+    </video>
+</body>
+</html>
